@@ -9,7 +9,7 @@
     --font-size: 1vw;
     --color-green: #3b573a;
     --color-lgreen: #567c50;
-    --color-beige: rgb(211, 187, 159);
+    --color-beige: rgb(212, 182, 147);
     --color-brown: #87533c;
 }
 
@@ -21,17 +21,17 @@ html{
 
 }
 
-img {
+.grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid;
+    border: 3px solid;
     border-color: var(--color-green);
     transition: all .2s;
 }
 
-img:hover {
+.grid img:hover {
     border: 5px solid;
     border-color: var(--color-lgreen);
     transition: all .2s;
@@ -43,8 +43,6 @@ header{
     border: 7px solid;
     border-color: var(--color-lgreen);
     text-align: center;
-    border-radius: 2rem;
-    padding: .1rem;
     font-size: calc(var(--font-size) + 25px);
     text-shadow: 3px 2px 3px rgb(126, 92, 49);
     position: sticky;
@@ -54,7 +52,7 @@ header{
 
 header a{
     text-decoration: none;
-    font-size: calc(var(--font-size) + 9px);
+    font-size: calc(var(--font-size) + 7px);
     background-color: var(--color-lgreen);
     border-radius: 2rem;
     padding: .5rem;
@@ -73,6 +71,9 @@ header a:hover{
 
 header ul{
     list-style-type: none;
+    margin-top: -150px;
+    margin-right: 20px;
+    float: right;
 
 }
 
@@ -82,15 +83,15 @@ header ul{
     color: var(--color-brown);
 }
 
-.teas {
+.grid {
 width: 1100px;
 height: 1300px;
 margin: 0 auto;
 display: grid;
 grid-template-columns: repeat(8, 1fr);
 grid-template-rows: repeat(10, 1fr);
-grid-column-gap: 10px;
-grid-row-gap: 60px;
+grid-column-gap: 25px;
+grid-row-gap: 150px;
 }
 
 .div1 { 
@@ -199,18 +200,18 @@ grid-row-gap: 60px;
 
 .div1,
 .div20 {
-    max-width: 210px;
     color: var(--color-beige);
     background-color: var(--color-green);
     border: 4px solid;
     border-color: var(--color-lgreen);
     border-radius: 50%;
     border-style: dashed;
-    font-size: calc(var(--font-size) + 12px);
+    font-size: calc(var(--font-size) + 5px);
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
 }
 
+/*There's probably an easier way to do this, I just haven't figured it out*/
 .div2 p,
 .div3 p,
 .div4 p,
@@ -316,15 +317,16 @@ hr {
 
 footer {
     background-color: var(--color-green);
+    border: 6px solid;
+    border-color: var(--color-lgreen);
     font-size: calc(var(--font-size) + 1px);
     color: var(--color-beige);
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
+    margin-top: 150px;
 }
 
 footer ul{
     list-style-type: none;
+    
 }
 
 footer a{
@@ -332,11 +334,31 @@ footer a{
     color: var(--color-beige);
     padding: .1rem;
     background-color: var(--color-lgreen);
+    border-radius: 5rem;
+    font-size: calc(var(--font-size) + 5px);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
     transition: all .3s;
 }
 
 footer a:hover{
     font-size: calc(var(--font-size) + .3px);
     transition: all .3s;
+}
+
+footer img{
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.rmug{
+    float: right;
+
+}
+
+.lmug{
+    float: left;
 }
 

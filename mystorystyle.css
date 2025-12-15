@@ -60,7 +60,7 @@ img{
     margin-top: -100px;
 }
 
-img:hover{
+img{
     animation: spin linear .8s;
     animation-fill-mode: forwards;
 }
