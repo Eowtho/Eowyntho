@@ -1,0 +1,78 @@
+html{
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    background-color: var(--color-beige);
+
+}
+
+:root{
+    --font-size: 1vw;
+    --color-green: #3b573a;
+    --color-lgreen: #567c50;
+    --color-beige: rgb(211, 187, 159);
+    --color-brown: #87533c;
+}
+
+header{
+    background-color: var(--color-green);
+    text-align: center;
+    color: var(--color-beige);
+    border-radius: 4rem;
+    border: 4px solid;
+    border-color: var(--color-lgreen);
+}
+
+nav a{
+    text-decoration: none;
+    background-color: var(--color-green);
+    color: var(--color-beige);
+    border-radius: 2rem;
+    border: 2px solid;
+    border-color: var(--color-lgreen);
+    padding: .3rem;
+    transition: all .3s;
+}
+
+nav a:hover{
+    font-size: calc(var(--font-size) + 7px);
+    background-color: var(--color-lgreen);
+    transition: all .3s
+}
+
+p{
+    max-width: 400px;
+    text-align: center;
+    background-color: var(--color-brown);
+    color: var(--color-beige);
+    border-radius: 2rem;
+    padding: .5rem;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    object-fit: fill;
+    float: right;
+    margin-right: 90px;
+    margin-bottom: 90px;
+    margin-top: -150px;
+}
+
+img:hover{
+    animation: spin linear .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
